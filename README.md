@@ -1,8 +1,8 @@
-### Start with:
+# Start with:
 
 ## Install: 
 * npm init
 
-# After:
+### After:
 * $ npm install ava@next --save-dev
 * $ npx ava --init
