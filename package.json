@@ -1,0 +1,19 @@
+{
+  "name": "hacking-jaro-winkler-distance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syzer/hacking-jaro-winkler-distance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syzer/hacking-jaro-winkler-distance/issues"
+  },
+  "homepage": "https://github.com/syzer/hacking-jaro-winkler-distance#readme"
+}
