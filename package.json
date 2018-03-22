@@ -18,5 +18,9 @@
   "homepage": "https://github.com/syzer/hacking-jaro-winkler-distance#readme",
   "devDependencies": {
     "ava": "^1.0.0-beta.3"
+  },
+  "dependencies": {
+    "ava-check": "^1.0.0-rc.0",
+    "natural": "^0.5.6"
   }
 }
