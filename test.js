@@ -1,10 +1,6 @@
 import test from 'ava'
-
 const { JaroWinklerDistance } = require('./index')
-
-// import { gen } from 'ava-check'
 import { check, gen, property } from 'testcheck'
-// import { natural } from 'natural'
 
 test('addition is commutative', async t => {
   console.warn(JaroWinklerDistance)
