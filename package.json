@@ -20,6 +20,7 @@
     "ava": "^1.0.0-beta.3"
   },
   "dependencies": {
-    "natural": "^0.5.6"
+    "natural": "^0.5.6",
+    "nodemon": "^1.17.2"
   }
 }
