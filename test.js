@@ -1,6 +1,23 @@
 import test from 'ava'
-import { check, gen }  from 'ava-check'
 
-test('addition is commutative', check(gen.int, gen.int, (t, numA, numB) => {
-  t.true(numA + numB === numB + numA)
-}))
+const { JaroWinklerDistance } = require('./index')
+
+// import { gen } from 'ava-check'
+import { check, gen, property } from 'testcheck'
+// import { natural } from 'natural'
+
+test('addition is commutative', async t => {
+  console.warn(JaroWinklerDistance)
+
+  const result = await check(
+    property(
+      gen.asciiString.notEmpty(), gen.asciiString.notEmpty(),
+      (str, str2) => {
+        const distance = JaroWinklerDistance(str, str2)
+        console.warn(distance, str, str2)
+        return distance => 0 && distance <= 1
+      }
+    ),
+    { numTests: 10000 })
+  t.true(true)
+})
